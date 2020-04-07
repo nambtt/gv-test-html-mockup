@@ -1,0 +1,87 @@
+*,*::before,*::after { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+body {
+    padding: 1em; 
+    height: 100vh;
+}
+
+body .menu {
+    border: none;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+hr{ 
+    height: 1px;
+    color: #999;
+    background-color: #999;
+    border: none;
+    margin: 0.5em 0;
+}
+
+#leftColumn .menu {
+    width: auto !important;
+}
+
+.page {
+    padding: 1em;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.logo-text {
+    font-size: 4.5em;
+}
+.ui.grid .column.full-height {
+    height: 100%;
+}
+
+.ui.grid.main {
+    height: calc(100vh - 5rem);
+}
+
+.main-content-wrapper {
+    padding: 1em;
+    border: 1px solid #ccc;
+    height: calc(100% - 2.9em);
+}
+
+.top-main-content {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.main-content {
+    position: relative;
+    height: calc(100vh - 20.5rem);
+    overflow: auto;
+    width: 100%;
+}
+
+.main-icon {
+    position: absolute;
+    right: 0;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 2em);
+    background: #eee;
+    padding: 1em 0;
+}
+
+.bottom-1 * {
+    padding: 0 10px;
+}
+
+.page .ui.secondary.pointing.menu .header.item {
+    color: rgba(0,0,0,.85) !important;
+}

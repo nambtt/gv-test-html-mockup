@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- https://getbootstrap.com/docs/3.4/customize/ -->
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <link rel="stylesheet" type="text/css" href="custom.mobile.css">
+    </head>
+    <body class="pushable">
+        <!-- Side Bar menu -->
+        <div class="ui vertical inverted sidebar menu left">
+            <a class="active item">Page Operations</a>
+            <a class="item">Browse Space</a>
+            <a class="item">Add Content</a>
+        </div>
+
+        <div class="ui pusher">
+            <div class="page">
+                <div class="ui menu large secondary inverted pointing">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <div class="header item">
+                        <div class="ui breadcrumb">
+                            <a class="section">Home</a>
+                            <i class="right angle icon divider"></i>
+                            <a class="section">Store</a>
+                            <i class="right angle icon divider"></i>
+                            <div class="active section">T-Shirt</div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <div class="large ui action left icon input hidden-xs">
+                            <i class="search icon"></i>
+                            <input type="text" laceholder="Search">
+                            <button class="ui button">Search</button>
+                        </div>
+                        <div class="small ui icon input visible-xs hidden-sm">
+                            <input type="text" placeholder="Search...">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui grid main">
+                    <div id="leftColumn" class="three wide column hidden-xs">
+                        <h1 class="logo-text">Wiki</h1>
+                        <div class="ui left vertical menu">
+                            <a class="item">Page Operations</a>
+                            <a class="item">Browse Space</a>
+                            <a class="item">Add Content</a>
+                        </div>
+                    </div>
+                
+                    <div id="rightColumn" class="thirteen wide column">
+                        <div class="ui breadcrumb visible-xs hidden-sm">
+                            <a class="section">Home</a>
+                            <i class="right angle icon divider"></i>
+                            <a class="section">Store</a>
+                            <i class="right angle icon divider"></i>
+                            <div class="active section">T-Shirt</div>
+                        </div>
+                        <div class="ui menu visible-xs hidden-sm">
+                            <div class="right menu">
+                                <a class="item">Welcome Peldi</a>
+                                <a class="item">History</a>
+                                <div class="item">
+                                    <i class="print icon"></i>
+                                </div>
+                                <div class="ui simple dropdown item">
+                                    ...
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">Preferences</div>
+                                        <div class="item">Administration</div>
+                                        <div class="item">Log Out</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui menu hidden-xs">
+                            <div class="right menu">
+                                <a class="item">Welcome Peldi</a>
+                                <a class="item">History</a>
+                                <a class="item">Preferences</a>
+                                <a class="item">Administration</a>
+                                <a class="item">Log Out</a>
+                                <div class="item">
+                                    <i class="print icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content-wrapper">
+                            <div class="top-main-content">
+                                <span class="main-tag">Main</span>
+                                <span class="main-icon">
+                                    <i class="flag outline icon"></i>
+                                    <i class="envelope outline icon"></i>
+                                </span>
+                            </div>
+
+                            <div class="main-content">
+                                <h1 class="ui header">Welcome to Our Wiki!
+                                    <div class="sub header">Added by Peldi, last edited by Peidl on Mar 09, 2008 (<a>view changes</a>)</div>
+                                </h1>
+                                <p>Welcome to our awesome wiki. A place for us to share knowledge yahdada yaddaa yadda.<br />
+                                You can add imags like the one below:</p>
+                                <img class="center" src="image-placeholder-300x210.png" />
+                                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="bottom-bar">
+                            <div class="bottom-1">
+                                <span class="item">10 Children</span>
+                                <a class="item">Show Children</a>
+                                <a class="item">View In Hierachy</a>
+                                <a class="item">Add Child Page</a>
+                            </div>
+                            <hr/>
+                            <div class="bottom-1">
+                                <i class="file outline icon"></i>
+                                <span class="item">0 comments</span>
+                                <a class="item">Add Comment</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script>
+
+            $(document)
+                .ready(function() {
+
+                    // create sidebar and attach to menu open
+                    $('.ui.sidebar')
+                        .sidebar('attach events', '.toc.item');
+
+                });
+            
+        </script>
+
+    </body>
+</html>
