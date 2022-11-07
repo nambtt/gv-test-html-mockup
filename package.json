@@ -12,7 +12,7 @@
   "author": "Nam Bui",
   "license": "ISC",
   "dependencies": {
-    "semantic-ui": "^2.4.2",
+    "semantic-ui": "^2.5.0",
     "web-dev-server": "^2.1.0"
   }
 }
